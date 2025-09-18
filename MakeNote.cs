@@ -31,7 +31,7 @@ namespace Mini_Project___Mini_Note
         private void ClickImageSave(object sender, EventArgs e)
         {
 
-            System.IO.StreamWriter SW = new System.IO.StreamWriter("InfoMiniNote.txt");
+            System.IO.StreamWriter SW = new System.IO.StreamWriter("InfoMiniNote.txt" , true );
 
             string oneNote = MiniNoteTextBox.Text;
 
