@@ -3,7 +3,13 @@
 **Mini Note** is a simple Windows Forms Application for quickly writing and saving notes.  
 It comes with a user-friendly graphical interface that includes buttons, text boxes, images, and tooltips for easy interaction.
 
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D7?style=for-the-badge&logo=windows&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+
 ---
+
 
 ## ✨ Features
 
