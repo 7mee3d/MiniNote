@@ -77,8 +77,9 @@ It comes with a user-friendly graphical interface that includes buttons, text bo
 
 ## 🔮 Future Improvements
 
-- [ ] 📂 Add "Open Note" feature to load saved notes.  
-- [ ] 🎨 Add text formatting options (font, size, color).  
+- [ ] 📂 Add "Open Note" feature to load saved notes.
+
+✅ 🎨 Add text formatting options (font, size, color).
 - [ ] 🗑️ Allow editing or deleting saved notes.  
 - [ ] 🌙 Add Dark Mode support.  
 
