@@ -35,9 +35,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxChangeFont = new System.Windows.Forms.PictureBox();
+            this.FD = new System.Windows.Forms.FontDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChangeFont)).BeginInit();
             this.SuspendLayout();
             // 
             // MiniNoteTextBox
@@ -54,7 +57,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(256, 640);
+            this.pictureBox1.Location = new System.Drawing.Point(207, 640);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 69);
             this.pictureBox1.TabIndex = 2;
@@ -65,7 +68,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(379, 639);
+            this.pictureBox2.Location = new System.Drawing.Point(330, 639);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(65, 65);
             this.pictureBox2.TabIndex = 2;
@@ -76,7 +79,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(128, 640);
+            this.pictureBox3.Location = new System.Drawing.Point(79, 640);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(67, 69);
             this.pictureBox3.TabIndex = 2;
@@ -105,6 +108,21 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Note";
             // 
+            // pictureBoxChangeFont
+            // 
+            this.pictureBoxChangeFont.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxChangeFont.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxChangeFont.Image")));
+            this.pictureBoxChangeFont.Location = new System.Drawing.Point(440, 639);
+            this.pictureBoxChangeFont.Name = "pictureBoxChangeFont";
+            this.pictureBoxChangeFont.Size = new System.Drawing.Size(65, 65);
+            this.pictureBoxChangeFont.TabIndex = 2;
+            this.pictureBoxChangeFont.TabStop = false;
+            this.pictureBoxChangeFont.Click += new System.EventHandler(this.ClickpictureBoxChangeFont);
+            // 
+            // FD
+            // 
+            this.FD.Apply += new System.EventHandler(this.FD_Apply);
+            // 
             // MakeNote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +132,7 @@
             this.ClientSize = new System.Drawing.Size(1103, 726);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBoxChangeFont);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -129,6 +148,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChangeFont)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +162,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBoxChangeFont;
+        private System.Windows.Forms.FontDialog FD;
     }
 }

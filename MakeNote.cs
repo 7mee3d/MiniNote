@@ -69,5 +69,37 @@ namespace Mini_Project___Mini_Note
             setFormFixedMoveAndSize();
 
         }
+
+        private void ClickpictureBoxChangeFont(object sender, EventArgs e)
+        {
+
+            FD.ShowEffects = true;
+            FD.ShowColor = true;
+            FD.ShowApply = true;
+
+            Color c = MiniNoteTextBox.ForeColor;
+            Font f = MiniNoteTextBox.Font;
+
+            DialogResult DR  = FD.ShowDialog() ; 
+
+            if(DR == DialogResult.OK)
+            {
+                MiniNoteTextBox.Font = FD.Font;
+                MiniNoteTextBox.ForeColor = FD.Color;
+
+            }
+            else
+            {
+
+                MiniNoteTextBox.Font = f ;
+                MiniNoteTextBox.ForeColor = c;
+            }
+        }
+
+        private void FD_Apply(object sender, EventArgs e)
+        {
+            MiniNoteTextBox.Font = FD.Font;
+            MiniNoteTextBox.ForeColor = FD.Color;
+        }
     }
 }
