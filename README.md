@@ -49,10 +49,12 @@ It comes with a user-friendly graphical interface that includes buttons, text bo
 ## 📸 Screenshots
 
 ### Main Screen:
-<img width="1106" height="752" alt="Screenshot 2025-09-18 153030" src="https://github.com/user-attachments/assets/2983edd0-7c2b-4c6c-8b54-7a99776f96e1" />
+
+<img width="1116" height="775" alt="Screenshot 2025-11-04 164104" src="https://github.com/user-attachments/assets/35612855-3f94-436a-bc78-0b1508654847" />
 
 ### Note Screen:
-<img width="1104" height="758" alt="Screenshot 2025-09-18 150633" src="https://github.com/user-attachments/assets/29053e58-3012-4279-838c-620fdd92fc26" />
+
+<img width="1111" height="763" alt="Screenshot 2025-11-04 164113" src="https://github.com/user-attachments/assets/956b0020-f96f-4053-8cdb-304408120360" />
 
 ---
 
@@ -77,7 +79,7 @@ It comes with a user-friendly graphical interface that includes buttons, text bo
 
 ## 🔮 Future Improvements
 
-- [ ] 📂 Add "Open Note" feature to load saved notes.
+✅ 📂 Add "Open Note" feature to load saved notes.
 
 ✅ 🎨 Add text formatting options (font, size, color).
 - [ ] 🗑️ Allow editing or deleting saved notes.  
