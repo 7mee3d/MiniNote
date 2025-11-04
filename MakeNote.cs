@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mini_Project___Mini_Note.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -100,6 +101,29 @@ namespace Mini_Project___Mini_Note
         {
             MiniNoteTextBox.Font = FD.Font;
             MiniNoteTextBox.ForeColor = FD.Color;
+        }
+
+        private void LoadTextFileToLoadTextBox_Click(object sender, EventArgs e)
+        {
+            OFD.Title = "Select the File Text";
+            OFD.Filter = "TXT File|*.txt";
+           
+
+            if (OFD.ShowDialog() == DialogResult.OK)
+            {
+                string fillNameFile = OFD.FileName; 
+
+                if (System.IO.File.Exists(fillNameFile))
+                {
+                    MiniNoteTextBox.Text = System.IO.File.ReadAllText(fillNameFile);
+
+                }
+                else
+                {
+                    MessageBox.Show("Not Found ");
+                }
+            }
+           
         }
     }
 }

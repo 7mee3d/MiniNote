@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxChangeFont = new System.Windows.Forms.PictureBox();
             this.FD = new System.Windows.Forms.FontDialog();
+            this.OFD = new System.Windows.Forms.OpenFileDialog();
+            this.LoadTextFileToLoadTextBox = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -50,14 +52,16 @@
             this.MiniNoteTextBox.Location = new System.Drawing.Point(63, 70);
             this.MiniNoteTextBox.Multiline = true;
             this.MiniNoteTextBox.Name = "MiniNoteTextBox";
+            this.MiniNoteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.MiniNoteTextBox.Size = new System.Drawing.Size(468, 552);
             this.MiniNoteTextBox.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(207, 640);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 636);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 69);
             this.pictureBox1.TabIndex = 2;
@@ -67,8 +71,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(330, 639);
+            this.pictureBox2.Location = new System.Drawing.Point(239, 635);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(65, 65);
             this.pictureBox2.TabIndex = 2;
@@ -78,8 +83,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(79, 640);
+            this.pictureBox3.Location = new System.Drawing.Point(63, 636);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(67, 69);
             this.pictureBox3.TabIndex = 2;
@@ -111,8 +117,9 @@
             // pictureBoxChangeFont
             // 
             this.pictureBoxChangeFont.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxChangeFont.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxChangeFont.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxChangeFont.Image")));
-            this.pictureBoxChangeFont.Location = new System.Drawing.Point(440, 639);
+            this.pictureBoxChangeFont.Location = new System.Drawing.Point(325, 640);
             this.pictureBoxChangeFont.Name = "pictureBoxChangeFont";
             this.pictureBoxChangeFont.Size = new System.Drawing.Size(65, 65);
             this.pictureBoxChangeFont.TabIndex = 2;
@@ -123,6 +130,24 @@
             // 
             this.FD.Apply += new System.EventHandler(this.FD_Apply);
             // 
+            // OFD
+            // 
+            this.OFD.FileName = "OPD";
+            // 
+            // LoadTextFileToLoadTextBox
+            // 
+            this.LoadTextFileToLoadTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.LoadTextFileToLoadTextBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoadTextFileToLoadTextBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.LoadTextFileToLoadTextBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadTextFileToLoadTextBox.Location = new System.Drawing.Point(405, 638);
+            this.LoadTextFileToLoadTextBox.Name = "LoadTextFileToLoadTextBox";
+            this.LoadTextFileToLoadTextBox.Size = new System.Drawing.Size(125, 61);
+            this.LoadTextFileToLoadTextBox.TabIndex = 4;
+            this.LoadTextFileToLoadTextBox.Text = "Load Text";
+            this.LoadTextFileToLoadTextBox.UseVisualStyleBackColor = false;
+            this.LoadTextFileToLoadTextBox.Click += new System.EventHandler(this.LoadTextFileToLoadTextBox_Click);
+            // 
             // MakeNote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +155,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1103, 726);
+            this.Controls.Add(this.LoadTextFileToLoadTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxChangeFont);
@@ -164,5 +190,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxChangeFont;
         private System.Windows.Forms.FontDialog FD;
+        private System.Windows.Forms.OpenFileDialog OFD;
+        private System.Windows.Forms.Button LoadTextFileToLoadTextBox;
     }
 }
